@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://naledi-ya-batlase-tutoring.vercel.app/sitemap.xml
