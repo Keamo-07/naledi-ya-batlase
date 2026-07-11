@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join the NYB Tutor Team | Naledi Ya Batlase Tutoring Hub</title>
+  <meta name="description" content="Apply to join the Naledi Ya Batlase tutor team. We are looking for patient, subject-strong tutors committed to learner success across the Bakwena region.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://naledi-ya-batlase-tutoring.vercel.app/tutors.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23111d35'/%3E%3Ccircle cx='32' cy='32' r='22' fill='none' stroke='%23c8a64d' stroke-width='2.5'/%3E%3Ctext x='32' y='38' text-anchor='middle' font-family='Georgia,serif' font-size='17' font-weight='700' fill='%23f7f0df'%3ENYB%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      --navy-950: #0b1324;
+      --navy-900: #111d35;
+      --navy-800: #172744;
+      --navy-700: #213554;
+      --gold-600: #b9973f;
+      --gold-500: #c8a64d;
+      --gold-300: #e9d28b;
+      --cream-100: #fbf8f1;
+      --cream-200: #f5eddd;
+      --cream-300: #eadcc3;
+      --white: #ffffff;
+      --ink: #172033;
+      --muted: #647085;
+      --line: rgba(23,32,51,0.12);
+      --success: #22664b;
+      --error: #c0392b;
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, sans-serif;
+      --font-serif: Georgia, "Times New Roman", serif;
+      --max: 760px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-sans);
+      background: var(--cream-100);
+      color: var(--ink);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    ::selection { background: rgba(200,166,77,0.3); color: var(--navy-950); }
+    :focus-visible { outline: 3px solid var(--gold-500); outline-offset: 4px; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ── HEADER ── */
+    .site-header {
+      background: var(--navy-900);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding: 0 2rem;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--white);
+      font-family: var(--font-serif);
+      font-size: 1rem;
+    }
+    .logo-emblem {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1.5px solid var(--gold-500);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--gold-500);
+      letter-spacing: 1px;
+      flex-shrink: 0;
+    }
+    .header-logo span { color: rgba(255,255,255,0.6); font-size: 0.75rem; margin-left: 4px; }
+    .back-link {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.5);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s;
+    }
+    .back-link:hover { color: var(--gold-300); }
+
+    /* ── HERO ── */
+    .page-hero {
+      background: var(--navy-900);
+      padding: 4rem 2rem 3.5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(200,166,77,0.07) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .page-hero-inner { position: relative; z-index: 1; max-width: var(--max); margin: 0 auto; }
+    .hero-eyebrow {
+      font-size: 0.7rem;
+      letter-spacing: 3.5px;
+      text-transform: uppercase;
+      color: var(--gold-500);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .page-hero h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(1.9rem, 4.5vw, 2.8rem);
+      color: var(--gold-300);
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+    .page-hero-lead {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.55);
+      max-width: 540px;
+      margin: 0 auto 2rem;
+      line-height: 1.8;
+    }
+    .hero-pillars {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .hero-pillar {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.5);
+    }
+    .hero-pillar-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--gold-500);
+      flex-shrink: 0;
+    }
+
+    /* ── WHAT WE LOOK FOR ── */
+    .criteria-section {
+      background: var(--cream-200);
+      padding: 3.5rem 2rem;
+      border-bottom: 1px solid var(--cream-300);
+    }
+    .criteria-inner { max-width: var(--max); margin: 0 auto; }
+    .criteria-title {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      color: var(--navy-900);
+      margin-bottom: 1.5rem;
+    }
+    .criteria-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .criteria-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 1.25rem 1.4rem;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .criteria-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(200,166,77,0.1);
+      border: 1px solid rgba(200,166,77,0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1rem;
+    }
+    .criteria-card h3 { font-size: 0.9rem; font-weight: 700; color: var(--navy-900); margin-bottom: 0.25rem; }
+    .criteria-card p { font-size: 0.82rem; color: var(--muted); line-height: 1.6; }
+
+    /* ── FORM SECTION ── */
+    .form-section {
+      padding: 3.5rem 2rem 5rem;
+      background: var(--cream-100);
+    }
+    .form-inner { max-width: var(--max); margin: 0 auto; }
+    .form-title {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      color: var(--navy-900);
+      margin-bottom: 0.4rem;
+    }
+    .form-subtitle { font-size: 0.88rem; color: var(--muted); margin-bottom: 2.5rem; }
+
+    /* FIELDSET */
+    fieldset {
+      border: none;
+      padding: 0;
+      margin: 0 0 2.5rem;
+    }
+    legend {
+      font-size: 0.68rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--gold-600);
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    legend::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--line);
+    }
+
+    /* FIELDS */
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .field { display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 1.1rem; }
+    .field label {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--navy-800);
+      letter-spacing: 0.1px;
+    }
+    .field input,
+    .field select,
+    .field textarea {
+      background: var(--white);
+      border: 1px solid var(--cream-300);
+      border-radius: var(--radius-sm);
+      color: var(--ink);
+      font-family: var(--font-sans);
+      font-size: 0.92rem;
+      padding: 0.7rem 1rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      width: 100%;
+    }
+    .field input::placeholder,
+    .field textarea::placeholder { color: #aab0bf; }
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus {
+      border-color: var(--gold-500);
+      box-shadow: 0 0 0 3px rgba(200,166,77,0.12);
+      outline: none;
+    }
+    .field-invalid { border-color: var(--error) !important; }
+    .field-error {
+      display: none;
+      font-size: 0.75rem;
+      color: var(--error);
+    }
+    .req { color: var(--gold-600); }
+    .optional { color: var(--muted); font-size: 0.75rem; font-weight: 400; }
+    .field-hint { font-size: 0.75rem; color: var(--muted); }
+
+    /* CHECKBOX GRID */
+    .check-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+      margin-top: 0.25rem;
+    }
+    .check-label {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: var(--cream-200);
+      border: 1px solid var(--cream-300);
+      border-radius: 20px;
+      padding: 0.4rem 0.85rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all 0.18s;
+      user-select: none;
+    }
+    .check-label:hover { border-color: var(--gold-500); color: var(--navy-900); }
+    .check-label input[type="checkbox"] { accent-color: var(--gold-500); width: 13px; height: 13px; flex-shrink: 0; }
+    .check-label:has(input:checked) {
+      background: rgba(200,166,77,0.1);
+      border-color: var(--gold-500);
+      color: var(--navy-900);
+      font-weight: 600;
+    }
+
+    /* RADIO BUTTONS */
+    .radio-row {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-top: 0.25rem;
+    }
+    .radio-label {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: var(--cream-200);
+      border: 1px solid var(--cream-300);
+      border-radius: 20px;
+      padding: 0.4rem 0.85rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all 0.18s;
+    }
+    .radio-label:hover { border-color: var(--gold-500); color: var(--navy-900); }
+    .radio-label input[type="radio"] { accent-color: var(--gold-500); }
+    .radio-label:has(input:checked) {
+      background: rgba(200,166,77,0.1);
+      border-color: var(--gold-500);
+      color: var(--navy-900);
+      font-weight: 600;
+    }
+
+    /* RATING SCALE LEGEND */
+    .rating-scale-legend {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      background: var(--cream-200);
+      border: 1px solid var(--cream-300);
+      border-radius: var(--radius-sm);
+      padding: 0.85rem 1rem;
+      margin-bottom: 0.75rem;
+    }
+    .rs-item {
+      font-size: 0.78rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .rs-item strong {
+      color: var(--navy-900);
+      font-weight: 700;
+      min-width: 12px;
+      display: inline-block;
+    }
+    /* RATING HINT */
+    .rating-hint {
+      font-size: 0.78rem;
+      color: var(--gold-600);
+      background: rgba(200,166,77,0.07);
+      border: 1px solid rgba(200,166,77,0.2);
+      border-radius: var(--radius-sm);
+      padding: 0.5rem 0.85rem;
+      margin-bottom: 0.75rem;
+      font-weight: 500;
+    }
+    /* RATING SCALE */
+    .rating-grid { display: flex; flex-direction: column; gap: 0.75rem; margin-top: 0.25rem; }
+    .rating-row { display: grid; grid-template-columns: minmax(120px,160px) 1fr; align-items: center; gap: 1rem; }
+    .rating-subject { font-size: 0.82rem; font-weight: 600; color: var(--navy-800); }
+    .rating-options { display: flex; gap: 0.4rem; }
+    .rating-option { display: flex; flex-direction: column; align-items: center; gap: 4px; cursor: pointer; }
+    .rating-option input[type="radio"] { accent-color: var(--gold-500); }
+    .rating-option span { font-size: 0.65rem; color: var(--muted); }
+    .rating-labels {
+      display: grid;
+      grid-template-columns: minmax(120px,160px) 1fr;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .rating-labels-inner {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 2px;
+    }
+    .rating-labels-inner span { font-size: 0.68rem; color: var(--muted); letter-spacing: 0.5px; }
+
+    /* SUBMIT */
+    .submit-area {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--line);
+    }
+    .submit-note {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+      line-height: 1.7;
+    }
+    .btn-submit {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      background: var(--navy-900);
+      color: var(--gold-300);
+      font-weight: 800;
+      font-size: 1rem;
+      padding: 1.05rem 2rem;
+      border-radius: var(--radius-sm);
+      border: 2px solid var(--gold-500);
+      cursor: pointer;
+      width: 100%;
+      transition: all 0.2s;
+      font-family: var(--font-sans);
+    }
+    .btn-submit:hover {
+      background: var(--gold-500);
+      color: var(--navy-950);
+      transform: translateY(-1px);
+    }
+
+    /* SUCCESS STATE */
+    .success-screen {
+      display: none;
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: var(--white);
+      border: 1px solid rgba(34,102,75,0.2);
+      border-radius: var(--radius-md);
+      margin-top: 2rem;
+    }
+    .success-screen.is-visible { display: block; }
+    .success-icon { font-size: 3rem; margin-bottom: 1rem; }
+    .success-screen h2 { font-family: var(--font-serif); font-size: 1.5rem; color: var(--navy-900); margin-bottom: 0.75rem; }
+    .success-screen p { font-size: 0.9rem; color: var(--muted); line-height: 1.8; }
+
+    /* SECTION GUIDE */
+    .form-sections-guide {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.35rem;
+      margin-bottom: 2rem;
+      padding: 0.75rem 1rem;
+      background: var(--cream-200);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--cream-300);
+    }
+    .guide-step { font-size: 0.75rem; color: var(--muted); font-weight: 600; }
+    .guide-sep { font-size: 0.7rem; color: var(--cream-300); }
+
+    /* FOOTER */
+    .page-footer {
+      background: var(--navy-950);
+      padding: 1.5rem 2rem;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .page-footer p { font-size: 0.8rem; color: rgba(255,255,255,0.25); }
+    .page-footer a { color: rgba(200,166,77,0.6); transition: color 0.2s; }
+    .page-footer a:hover { color: var(--gold-300); }
+
+    /* RESPONSIVE */
+    @media (max-width: 640px) {
+      .form-row { grid-template-columns: 1fr; }
+      .check-grid { grid-template-columns: 1fr 1fr; }
+      .rating-row { grid-template-columns: 1fr; gap: 0.25rem; }
+      .rating-labels { grid-template-columns: 1fr; }
+      .rating-subject { font-size: 0.78rem; }
+      .rating-options { justify-content: space-between; }
+      .criteria-grid { grid-template-columns: 1fr; }
+      .page-hero { padding: 3rem 1.25rem 2.5rem; }
+      .form-section { padding: 2.5rem 1.25rem 4rem; }
+      .criteria-section { padding: 2.5rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <a href="/" class="header-logo" aria-label="Naledi Ya Batlase home">
+      <div class="logo-emblem">NYB</div>
+      Naledi Ya Batlase <span>Tutoring Hub</span>
+    </a>
+    <a href="/" class="back-link" aria-label="Back to main site">
+      ← Back to site
+    </a>
+  </header>
+
+  <!-- HERO -->
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <p class="hero-eyebrow">Join the team</p>
+      <h1>Become an NYB Tutor</h1>
+      <p class="page-hero-lead">We are building a team of tutors who believe in what we believe: that every learner in the Bakwena region deserves access to quality academic support, regardless of what they can afford.</p>
+      <div class="hero-pillars">
+        <div class="hero-pillar"><span class="hero-pillar-dot"></span>Bakwena Region</div>
+        <div class="hero-pillar"><span class="hero-pillar-dot"></span>Community-based</div>
+        <div class="hero-pillar"><span class="hero-pillar-dot"></span>Grade 8–12</div>
+        <div class="hero-pillar"><span class="hero-pillar-dot"></span>Est. 2016</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHAT WE LOOK FOR -->
+  <section class="criteria-section" aria-label="What we look for in tutors">
+    <div class="criteria-inner">
+      <h2 class="criteria-title">What NYB looks for in a tutor</h2>
+      <div class="criteria-grid">
+        <div class="criteria-card">
+          <div class="criteria-icon">📚</div>
+          <div>
+            <h3>Subject mastery</h3>
+            <p>You know your subject well enough to explain it five different ways until one clicks.</p>
+          </div>
+        </div>
+        <div class="criteria-card">
+          <div class="criteria-icon">⏳</div>
+          <div>
+            <h3>Patience without limits</h3>
+            <p>You don't move on until the learner actually understands — not just nods.</p>
+          </div>
+        </div>
+        <div class="criteria-card">
+          <div class="criteria-icon">🤝</div>
+          <div>
+            <h3>Community commitment</h3>
+            <p>You understand this region. You're not here for a line on a CV — you're here because it matters.</p>
+          </div>
+        </div>
+        <div class="criteria-card">
+          <div class="criteria-icon">🎯</div>
+          <div>
+            <h3>Reliability</h3>
+            <p>Learners plan around you. You show up consistently, prepared, and on time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPLICATION FORM -->
+  <section class="form-section">
+    <div class="form-inner">
+      <h2 class="form-title">Tutor Application</h2>
+      <p class="form-subtitle">Complete every section honestly. Your application goes directly to Keamogetswe M. via WhatsApp. Nothing is stored on this website.</p>
+      <div class="form-sections-guide" aria-hidden="true">
+        <span class="guide-step">① Personal</span>
+        <span class="guide-sep">→</span>
+        <span class="guide-step">② Qualifications</span>
+        <span class="guide-sep">→</span>
+        <span class="guide-step">③ Subjects</span>
+        <span class="guide-sep">→</span>
+        <span class="guide-step">④ Availability</span>
+        <span class="guide-sep">→</span>
+        <span class="guide-step">⑤ Motivation</span>
+      </div>
+
+      <form id="tutorForm" novalidate>
+
+        <!-- PERSONAL DETAILS -->
+        <fieldset>
+          <legend>Personal details</legend>
+          <div class="form-row">
+            <div class="field">
+              <label for="firstName">First name <span class="req" aria-hidden="true">*</span></label>
+              <input id="firstName" name="firstName" type="text" placeholder="e.g. Thabo" autocomplete="given-name" required>
+              <span class="field-error" id="firstNameError">Required.</span>
+            </div>
+            <div class="field">
+              <label for="lastName">Last name <span class="req" aria-hidden="true">*</span></label>
+              <input id="lastName" name="lastName" type="text" placeholder="e.g. Sithole" autocomplete="family-name" required>
+              <span class="field-error" id="lastNameError">Required.</span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="phone">WhatsApp number <span class="req" aria-hidden="true">*</span></label>
+              <input id="phone" name="phone" type="tel" placeholder="e.g. 064 915 3831" autocomplete="tel" required>
+              <span class="field-error" id="phoneError">Required.</span>
+            </div>
+            <div class="field">
+              <label for="email">Email address <span class="optional">(optional)</span></label>
+              <input id="email" name="email" type="email" placeholder="e.g. thabo@email.com" autocomplete="email">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="area">Village or area <span class="req" aria-hidden="true">*</span></label>
+              <input id="area" name="area" type="text" placeholder="e.g. Makolokwe Village" required>
+              <span class="field-error" id="areaError">Required.</span>
+            </div>
+            <div class="field">
+              <label for="age">Age <span class="req" aria-hidden="true">*</span></label>
+              <input id="age" name="age" type="number" placeholder="e.g. 24" min="18" max="65" required>
+              <span class="field-error" id="ageError">Required.</span>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- QUALIFICATIONS -->
+        <fieldset>
+          <legend>Qualifications &amp; background</legend>
+          <div class="field">
+            <label for="highestQual">Highest qualification <span class="req" aria-hidden="true">*</span></label>
+            <select id="highestQual" name="highestQual" required>
+              <option value="">Select qualification</option>
+              <optgroup label="Secondary">
+                <option value="National Senior Certificate (Matric)">National Senior Certificate (Matric)</option>
+                <option value="Matric with Distinction">Matric with Distinction</option>
+              </optgroup>
+              <optgroup label="Higher Education — Certificates">
+                <option value="Higher Certificate (NQF 5)">Higher Certificate (NQF 5)</option>
+                <option value="Advanced Certificate (NQF 6)">Advanced Certificate (NQF 6)</option>
+                <option value="Postgraduate Certificate (NQF 8)">Postgraduate Certificate (NQF 8)</option>
+                <option value="PGCE — Postgraduate Certificate in Education">PGCE — Postgraduate Certificate in Education</option>
+              </optgroup>
+              <optgroup label="Higher Education — Diplomas">
+                <option value="National Diploma">National Diploma</option>
+                <option value="Diploma (NQF 6)">Diploma (NQF 6)</option>
+                <option value="Advanced Diploma (NQF 7)">Advanced Diploma (NQF 7)</option>
+                <option value="Postgraduate Diploma (NQF 8)">Postgraduate Diploma (NQF 8)</option>
+              </optgroup>
+              <optgroup label="Higher Education — Degrees">
+                <option value="Bachelor of Education (BEd)">Bachelor of Education (BEd)</option>
+                <option value="Bachelor of Science (BSc)">Bachelor of Science (BSc)</option>
+                <option value="Bachelor of Commerce (BCom)">Bachelor of Commerce (BCom)</option>
+                <option value="Bachelor of Arts (BA)">Bachelor of Arts (BA)</option>
+                <option value="Bachelor of Technology (BTech)">Bachelor of Technology (BTech)</option>
+                <option value="Other Bachelor's Degree">Other Bachelor's Degree</option>
+              </optgroup>
+              <optgroup label="Postgraduate">
+                <option value="Honours Degree (NQF 8)">Honours Degree (NQF 8)</option>
+                <option value="Master's Degree (NQF 9)">Master's Degree (NQF 9)</option>
+                <option value="Doctoral Degree (NQF 10)">Doctoral Degree / PhD (NQF 10)</option>
+              </optgroup>
+              <optgroup label="TVET &amp; Skills">
+                <option value="N1 Certificate">N1 Certificate</option>
+                <option value="N2 Certificate">N2 Certificate</option>
+                <option value="N3 Certificate">N3 Certificate</option>
+                <option value="N4 Certificate">N4 Certificate</option>
+                <option value="N5 Certificate">N5 Certificate</option>
+                <option value="N6 Certificate">N6 Certificate</option>
+                <option value="TVET National Certificate (Vocational)">TVET National Certificate (Vocational)</option>
+              </optgroup>
+              <optgroup label="Other">
+                <option value="Currently enrolled — undergraduate">Currently enrolled — undergraduate</option>
+                <option value="Currently enrolled — postgraduate">Currently enrolled — postgraduate</option>
+                <option value="Professional certification (e.g. SAIPA, CIMA)">Professional certification (e.g. SAIPA, CIMA)</option>
+                <option value="Other qualification">Other qualification</option>
+              </optgroup>
+            </select>
+            <span class="field-error" id="highestQualError">Required.</span>
+          </div>
+          <div class="field" id="enrolledYearWrap" style="display:none">
+            <label for="enrolledYear">What year are you in and what are you studying? <span class="optional">(since you are currently enrolled)</span></label>
+            <input id="enrolledYear" name="enrolledYear" type="text" placeholder="e.g. 3rd year BSc Applied Mathematics at SMU">
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="fieldOfStudy">Field of study <span class="req" aria-hidden="true">*</span></label>
+              <input id="fieldOfStudy" name="fieldOfStudy" type="text" placeholder="e.g. Applied Mathematics" required>
+              <span class="field-error" id="fieldOfStudyError">Required.</span>
+            </div>
+            <div class="field">
+              <label for="institution">Institution <span class="req" aria-hidden="true">*</span></label>
+              <input id="institution" name="institution" type="text" placeholder="e.g. Sefako Makgatho University" required>
+              <span class="field-error" id="institutionError">Required.</span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="teachingExp">Teaching or tutoring experience <span class="req" aria-hidden="true">*</span></label>
+            <select id="teachingExp" name="teachingExp" required>
+              <option value="">Select experience level</option>
+              <option value="No formal experience (strong subject knowledge)">No formal experience (strong subject knowledge)</option>
+              <option value="Less than 1 year">Less than 1 year</option>
+              <option value="1–2 years">1–2 years</option>
+              <option value="3–5 years">3–5 years</option>
+              <option value="More than 5 years">More than 5 years</option>
+            </select>
+            <span class="field-error" id="teachingExpError">Required.</span>
+          </div>
+          <div class="field">
+            <label for="expDetail">Describe your teaching or tutoring experience <span class="optional">(optional)</span></label>
+            <textarea id="expDetail" name="expDetail" rows="3" placeholder="e.g. Tutored Grade 12 learners in Mathematics for 2 years at a community centre in Brits. Also served as an exam invigilator."></textarea>
+          </div>
+        </fieldset>
+
+        <!-- SUBJECTS & GRADES -->
+        <fieldset>
+          <legend>Subjects you can teach</legend>
+          <div class="field">
+            <label>Select all subjects you are confident to teach <span class="req" aria-hidden="true">*</span></label>
+            <div class="check-grid">
+              <label class="check-label"><input type="checkbox" name="tutorSubjects" value="Mathematics"> Mathematics</label>
+              <label class="check-label"><input type="checkbox" name="tutorSubjects" value="Physical Science"> Physical Science</label>
+              <label class="check-label"><input type="checkbox" name="tutorSubjects" value="English"> English</label>
+              <label class="check-label"><input type="checkbox" name="tutorSubjects" value="Life Sciences"> Life Sciences</label>
+              <label class="check-label"><input type="checkbox" name="tutorSubjects" value="Accounting"> Accounting</label>
+              <label class="check-label"><input type="checkbox" name="tutorSubjects" value="Geography"> Geography</label>
+              <label class="check-label"><input type="checkbox" name="tutorSubjects" value="History"> History</label>
+              <label class="check-label"><input type="checkbox" name="tutorSubjects" value="Setswana"> Setswana</label>
+              <label class="check-label"><input type="checkbox" name="tutorSubjects" value="Natural Sciences"> Natural Sciences</label>
+              <label class="check-label"><input type="checkbox" name="tutorSubjects" value="EMS"> Econ. &amp; Mgmt Sciences</label>
+              <label class="check-label"><input type="checkbox" name="tutorSubjects" value="Technology"> Technology</label>
+            </div>
+            <span class="field-error" id="tutorSubjectsError">Please select at least one subject.</span>
+          </div>
+
+          <div class="field">
+            <label>Grades you are comfortable teaching <span class="req" aria-hidden="true">*</span></label>
+            <div class="radio-row">
+              <label class="check-label"><input type="checkbox" name="tutorGrades" value="Grade 8"> Grade 8</label>
+              <label class="check-label"><input type="checkbox" name="tutorGrades" value="Grade 9"> Grade 9</label>
+              <label class="check-label"><input type="checkbox" name="tutorGrades" value="Grade 10"> Grade 10</label>
+              <label class="check-label"><input type="checkbox" name="tutorGrades" value="Grade 11"> Grade 11</label>
+              <label class="check-label"><input type="checkbox" name="tutorGrades" value="Grade 12"> Grade 12</label>
+            </div>
+            <span class="field-error" id="tutorGradesError">Please select at least one grade.</span>
+          </div>
+
+          <!-- SUBJECT PROFICIENCY RATING -->
+          <div class="field">
+            <label>Rate your proficiency in your core subjects</label>
+            <div class="rating-scale-legend" aria-hidden="true">
+              <span class="rs-item"><strong>1</strong> — Basic awareness only</span>
+              <span class="rs-item"><strong>2</strong> — Some understanding, not confident</span>
+              <span class="rs-item"><strong>3</strong> — Solid working knowledge</span>
+              <span class="rs-item"><strong>4</strong> — Strong, can teach most topics</span>
+              <span class="rs-item"><strong>5</strong> — Expert, can teach any topic at any level</span>
+            </div>
+            <div class="rating-labels">
+              <div></div>
+              <div class="rating-labels-inner">
+                <span>1 Basic</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5 Expert</span>
+              </div>
+            </div>
+            <div class="rating-grid">
+              <div class="rating-row">
+                <span class="rating-subject">Mathematics</span>
+                <div class="rating-options">
+                  <label class="rating-option"><input type="radio" name="ratingMaths" value="1"><span>1</span></label>
+                  <label class="rating-option"><input type="radio" name="ratingMaths" value="2"><span>2</span></label>
+                  <label class="rating-option"><input type="radio" name="ratingMaths" value="3"><span>3</span></label>
+                  <label class="rating-option"><input type="radio" name="ratingMaths" value="4"><span>4</span></label>
+                  <label class="rating-option"><input type="radio" name="ratingMaths" value="5"><span>5</span></label>
+                </div>
+              </div>
+              <div class="rating-row">
+                <span class="rating-subject">Physical Science</span>
+                <div class="rating-options">
+                  <label class="rating-option"><input type="radio" name="ratingScience" value="1"><span>1</span></label>
+                  <label class="rating-option"><input type="radio" name="ratingScience" value="2"><span>2</span></label>
+                  <label class="rating-option"><input type="radio" name="ratingScience" value="3"><span>3</span></label>
+                  <label class="rating-option"><input type="radio" name="ratingScience" value="4"><span>4</span></label>
+                  <label class="rating-option"><input type="radio" name="ratingScience" value="5"><span>5</span></label>
+                </div>
+              </div>
+              <div class="rating-row">
+                <span class="rating-subject">English</span>
+                <div class="rating-options">
+                  <label class="rating-option"><input type="radio" name="ratingEnglish" value="1"><span>1</span></label>
+                  <label class="rating-option"><input type="radio" name="ratingEnglish" value="2"><span>2</span></label>
+                  <label class="rating-option"><input type="radio" name="ratingEnglish" value="3"><span>3</span></label>
+                  <label class="rating-option"><input type="radio" name="ratingEnglish" value="4"><span>4</span></label>
+                  <label class="rating-option"><input type="radio" name="ratingEnglish" value="5"><span>5</span></label>
+                </div>
+              </div>
+              <div class="rating-row">
+                <span class="rating-subject">Life Sciences</span>
+                <div class="rating-options">
+                  <label class="rating-option"><input type="radio" name="ratingLifeSci" value="1"><span>1</span></label>
+                  <label class="rating-option"><input type="radio" name="ratingLifeSci" value="2"><span>2</span></label>
+                  <label class="rating-option"><input type="radio" name="ratingLifeSci" value="3"><span>3</span></label>
+                  <label class="rating-option"><input type="radio" name="ratingLifeSci" value="4"><span>4</span></label>
+                  <label class="rating-option"><input type="radio" name="ratingLifeSci" value="5"><span>5</span></label>
+                </div>
+              </div>
+              <div class="rating-row">
+                <span class="rating-subject">Accounting</span>
+                <div class="rating-options">
+                  <label class="rating-option"><input type="radio" name="ratingAccounting" value="1"><span>1</span></label>
+                  <label class="rating-option"><input type="radio" name="ratingAccounting" value="2"><span>2</span></label>
+                  <label class="rating-option"><input type="radio" name="ratingAccounting" value="3"><span>3</span></label>
+                  <label class="rating-option"><input type="radio" name="ratingAccounting" value="4"><span>4</span></label>
+                  <label class="rating-option"><input type="radio" name="ratingAccounting" value="5"><span>5</span></label>
+                </div>
+              </div>
+              <div class="rating-row">
+                <span class="rating-subject">Geography</span>
+                <div class="rating-options">
+                  <label class="rating-option"><input type="radio" name="ratingGeog" value="1"><span>1</span></label>
+                  <label class="rating-option"><input type="radio" name="ratingGeog" value="2"><span>2</span></label>
+                  <label class="rating-option"><input type="radio" name="ratingGeog" value="3"><span>3</span></label>
+                  <label class="rating-option"><input type="radio" name="ratingGeog" value="4"><span>4</span></label>
+                  <label class="rating-option"><input type="radio" name="ratingGeog" value="5"><span>5</span></label>
+                </div>
+              </div>
+              <div class="rating-row">
+                <span class="rating-subject">History</span>
+                <div class="rating-options">
+                  <label class="rating-option"><input type="radio" name="ratingHistory" value="1"><span>1</span></label>
+                  <label class="rating-option"><input type="radio" name="ratingHistory" value="2"><span>2</span></label>
+                  <label class="rating-option"><input type="radio" name="ratingHistory" value="3"><span>3</span></label>
+                  <label class="rating-option"><input type="radio" name="ratingHistory" value="4"><span>4</span></label>
+                  <label class="rating-option"><input type="radio" name="ratingHistory" value="5"><span>5</span></label>
+                </div>
+              </div>
+            </div>
+            <p style="font-size:0.75rem;color:var(--muted);margin-top:0.5rem;">Only rate the subjects you selected above. Leave others blank.</p>
+          </div>
+        </fieldset>
+
+        <!-- AVAILABILITY -->
+        <fieldset>
+          <legend>Availability</legend>
+          <div class="field">
+            <label>Which sessions can you commit to? <span class="req" aria-hidden="true">*</span></label>
+            <div class="radio-row">
+              <label class="check-label"><input type="checkbox" name="availability" value="Monday-Friday 4pm-7pm"> Mon–Fri (4–7pm)</label>
+              <label class="check-label"><input type="checkbox" name="availability" value="Saturday 12pm-5pm"> Saturday (12–5pm)</label>
+              <label class="check-label"><input type="checkbox" name="availability" value="Sunday Open Day"> Sunday Open Day</label>
+            </div>
+            <span class="field-error" id="availabilityError">Please select at least one time slot.</span>
+          </div>
+          <div class="field">
+            <label for="startDate">When can you start? <span class="req" aria-hidden="true">*</span></label>
+            <select id="startDate" name="startDate" required>
+              <option value="">Select availability</option>
+              <option value="Immediately">Immediately</option>
+              <option value="Within 2 weeks">Within 2 weeks</option>
+              <option value="Within a month">Within a month</option>
+              <option value="Next term">Next school term</option>
+            </select>
+            <span class="field-error" id="startDateError">Required.</span>
+          </div>
+          <div class="field">
+            <label>Are you available consistently or only on certain dates?</label>
+            <div class="radio-row">
+              <label class="radio-label"><input type="radio" name="consistency" value="Consistently available every week"> Consistently every week</label>
+              <label class="radio-label"><input type="radio" name="consistency" value="Available most weeks but not all"> Most weeks, not all</label>
+              <label class="radio-label"><input type="radio" name="consistency" value="Availability varies — will confirm each week"> Varies week to week</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- MOTIVATION -->
+        <fieldset>
+          <legend>Your motivation</legend>
+          <div class="field">
+            <label for="motivation">Why do you want to join NYB? <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="motivation" name="motivation" rows="4" placeholder="Tell Keamogetswe why you want to be part of this. Be honest — this is the most important part of your application." required></textarea>
+            <span class="field-error" id="motivationError">Please tell us your motivation.</span>
+          </div>
+          <div class="field">
+            <label for="approach">How do you explain a concept when a learner doesn't understand the first time? <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="approach" name="approach" rows="4" placeholder="Give a real example if you can. e.g. 'When a learner struggles with fractions I start with slicing a piece of bread before touching the textbook...'" required></textarea>
+            <span class="field-error" id="approachError">Please describe your teaching approach.</span>
+          </div>
+          <div class="field">
+            <label for="challenge">Describe a time you helped someone understand something difficult. <span class="optional">(optional)</span></label>
+            <textarea id="challenge" name="challenge" rows="3" placeholder="Can be a learner, a friend, a sibling — anyone you helped figure something out."></textarea>
+          </div>
+          <div class="field">
+            <label for="additionalInfo">Anything else you want Keamogetswe to know? <span class="optional">(optional)</span></label>
+            <textarea id="additionalInfo" name="additionalInfo" rows="3" placeholder="Certifications, languages spoken, tools you use, anything that makes you the right fit."></textarea>
+          </div>
+        </fieldset>
+
+        <!-- SUBMIT -->
+        <div class="submit-area">
+          <p class="submit-note">Your application will be sent directly to Keamogetswe M. via WhatsApp. He reviews every application personally. If you are a strong fit, you will receive a WhatsApp reply within a few days to arrange a short conversation.</p>
+          <button type="submit" class="btn-submit">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            Submit Application via WhatsApp
+          </button>
+        </div>
+
+        <!-- SUCCESS -->
+        <div class="success-screen" id="successScreen" role="alert" aria-live="polite">
+          <div class="success-icon">🌟</div>
+          <h2>Application sent successfully</h2>
+          <p>Your application has been prepared and WhatsApp has been opened. Keamogetswe M. reviews every application personally. If you are a strong fit, you will receive a reply within a few days to arrange a conversation.<br><br>Thank you for wanting to be part of NYB.</p>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="page-footer">
+    <p>© 2016–2026 Naledi Ya Batlase Tutoring Hub · <a href="/">Return to main site</a></p>
+  </footer>
+
+  <script>
+    const form = document.getElementById('tutorForm');
+
+    // Show/hide enrolled year field based on qualification
+    const qualSelect = document.getElementById('highestQual');
+    const enrolledWrap = document.getElementById('enrolledYearWrap');
+    if (qualSelect && enrolledWrap) {
+      qualSelect.addEventListener('change', function() {
+        const isEnrolled = this.value.startsWith('Currently enrolled');
+        enrolledWrap.style.display = isEnrolled ? 'block' : 'none';
+      });
+    }
+
+    function showError(id, show) {
+      const el = document.getElementById(id);
+      if (el) el.style.display = show ? 'block' : 'none';
+    }
+    function markInvalid(id, invalid) {
+      const el = document.getElementById(id);
+      if (el) el.classList.toggle('field-invalid', invalid);
+    }
+    function clearAll() {
+      form.querySelectorAll('.field-error').forEach(e => e.style.display = 'none');
+      form.querySelectorAll('.field-invalid').forEach(e => e.classList.remove('field-invalid'));
+    }
+    function val(name) { return String(form.elements[name]?.value || '').trim(); }
+    function checked(name) { return [...form.querySelectorAll(`input[name="${name}"]:checked`)].map(el => el.value); }
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      clearAll();
+
+      const firstName = val('firstName');
+      const lastName = val('lastName');
+      const phone = val('phone');
+      const area = val('area');
+      const age = val('age');
+      const highestQual = val('highestQual');
+      const fieldOfStudy = val('fieldOfStudy');
+      const institution = val('institution');
+      const teachingExp = val('teachingExp');
+      const tutorSubjects = checked('tutorSubjects');
+      const tutorGrades = checked('tutorGrades');
+      const availability = checked('availability');
+      const startDate = val('startDate');
+      const motivation = val('motivation');
+      const approach = val('approach');
+
+      // Optional
+      const email = val('email');
+      const expDetail = val('expDetail');
+      const enrolledYear = val('enrolledYear');
+      const consistency = val('consistency');
+      const challenge = val('challenge');
+      const additionalInfo = val('additionalInfo');
+      const ratingMaths = val('ratingMaths');
+      const ratingScience = val('ratingScience');
+      const ratingEnglish = val('ratingEnglish');
+
+      let valid = true;
+      if (!firstName) { showError('firstNameError', true); markInvalid('firstName', true); valid = false; }
+      if (!lastName) { showError('lastNameError', true); markInvalid('lastName', true); valid = false; }
+      if (!phone) { showError('phoneError', true); markInvalid('phone', true); valid = false; }
+      if (!area) { showError('areaError', true); markInvalid('area', true); valid = false; }
+      if (!age) { showError('ageError', true); markInvalid('age', true); valid = false; }
+      if (!highestQual) { showError('highestQualError', true); markInvalid('highestQual', true); valid = false; }
+      if (!fieldOfStudy) { showError('fieldOfStudyError', true); markInvalid('fieldOfStudy', true); valid = false; }
+      if (!institution) { showError('institutionError', true); markInvalid('institution', true); valid = false; }
+      if (!teachingExp) { showError('teachingExpError', true); markInvalid('teachingExp', true); valid = false; }
+      if (tutorSubjects.length === 0) { showError('tutorSubjectsError', true); valid = false; }
+      if (tutorGrades.length === 0) { showError('tutorGradesError', true); valid = false; }
+      if (availability.length === 0) { showError('availabilityError', true); valid = false; }
+      if (!startDate) { showError('startDateError', true); markInvalid('startDate', true); valid = false; }
+      if (!motivation) { showError('motivationError', true); markInvalid('motivation', true); valid = false; }
+      if (!approach) { showError('approachError', true); markInvalid('approach', true); valid = false; }
+      if (!valid) { form.querySelector('.field-invalid, .field-error[style*="block"]')?.scrollIntoView({ behavior: 'smooth', block: 'center' }); return; }
+
+      const ratingLifeSci = val('ratingLifeSci');
+      const ratingAccounting = val('ratingAccounting');
+      const ratingGeog = val('ratingGeog');
+      const ratingHistory = val('ratingHistory');
+      const proficiency = [
+        ratingMaths ? `Mathematics: ${ratingMaths}/5` : '',
+        ratingScience ? `Physical Science: ${ratingScience}/5` : '',
+        ratingEnglish ? `English: ${ratingEnglish}/5` : '',
+        ratingLifeSci ? `Life Sciences: ${ratingLifeSci}/5` : '',
+        ratingAccounting ? `Accounting: ${ratingAccounting}/5` : '',
+        ratingGeog ? `Geography: ${ratingGeog}/5` : '',
+        ratingHistory ? `History: ${ratingHistory}/5` : ''
+      ].filter(Boolean);
+
+      const lines = [
+        '🎓 NYB TUTOR APPLICATION',
+        '═══════════════════════════',
+        '',
+        '👤 PERSONAL DETAILS',
+        `Name: ${firstName} ${lastName}`,
+        `Age: ${age}`,
+        `WhatsApp: ${phone}`,
+        email ? `Email: ${email}` : '',
+        `Area: ${area}`,
+        '',
+        '📋 QUALIFICATIONS',
+        `Highest qualification: ${highestQual}`,
+        `Field of study: ${fieldOfStudy}`,
+        `Institution: ${institution}`,
+        `Teaching experience: ${teachingExp}`,
+        expDetail ? `Experience detail: ${expDetail}` : '',
+        enrolledYear ? `Currently enrolled: ${enrolledYear}` : '',
+        '',
+        '📚 SUBJECTS & GRADES',
+        `Subjects: ${tutorSubjects.join(', ')}`,
+        `Grades: ${tutorGrades.join(', ')}`,
+        proficiency.length ? `Proficiency ratings: ${proficiency.join(' | ')}` : '',
+        '',
+        '🗓️ AVAILABILITY',
+        `Available: ${availability.join(', ')}`,
+        `Can start: ${startDate}`,
+        consistency ? `Consistency: ${consistency}` : '',
+        '',
+        '💡 MOTIVATION',
+        `Why NYB: ${motivation}`,
+        '',
+        `Teaching approach: ${approach}`,
+        '',
+        challenge ? `Example of helping someone: ${challenge}` : '',
+        additionalInfo ? `Additional info: ${additionalInfo}` : '',
+        '',
+        '═══════════════════════════',
+        'Please review my application. I am genuinely interested in joining the NYB tutor team.'
+      ].filter(l => l !== undefined && l !== null).join('\n');
+
+      const url = `https://wa.me/27649153831?text=${encodeURIComponent(lines)}`;
+      window.open(url, '_blank', 'noopener,noreferrer');
+      const successEl = document.getElementById('successScreen');
+      const formEl = document.getElementById('tutorForm');
+      if (successEl && formEl) {
+        formEl.style.display = 'none';
+        successEl.classList.add('is-visible');
+        successEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    });
+  </script>
+</body>
+</html>
